@@ -33,12 +33,12 @@ To generate realistic workloads, file processing is simulated using randomised j
 
 ## Repository Structure
 
-| Repository        | Purpose                                       |
-| ----------------- | --------------------------------------------- |
-| fileops-app       | Application source code                       |
-| fileops-infra     | Terraform infrastructure                      |
-| fileops-manifests | Kubernetes manifests and GitOps configuration |
-| fileops-setup     | One-time bootstrap resources                  |
+| Repository                                                                 | Purpose                                       |
+| -------------------------------------------------------------------------- | --------------------------------------------- |
+| [fileops-app](https://github.com/qianzhong516/fileops)                     | Application source code                       |
+| [fileops-infra](https://github.com/qianzhong516/fileops-infra)             | Terraform infrastructure                      |
+| [fileops-manifests](https://github.com/qianzhong516/fileops-app-manifests) | Kubernetes manifests and GitOps configuration |
+| [fileops-setup](https://github.com/qianzhong516/fileops-infra-setup)       | One-time bootstrap resources                  |
 
 ## Technologies
 
