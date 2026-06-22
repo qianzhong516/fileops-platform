@@ -152,6 +152,7 @@ This video demonstrates visualising Prometheus metrics through Grafana dashboard
 ## Future Improvements
 
 - [ ] Reduce job recovery latency through more advanced worker coordination mechanisms.
+- [ ] Deploy workloads across multiple environments.
 - [ ] Add container image vulnerability scanning to the application CI pipeline.
 - [ ] Extend the observability stack with alert delivery and notification channels.
 - [ ] Introduce AI-assisted pull request reviews.
