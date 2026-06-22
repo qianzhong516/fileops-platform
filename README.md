@@ -1,5 +1,22 @@
 # FileOps
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Repository Structure](#repository-structure)
+- [Technologies](#technologies)
+- [Architecture](#architecture)
+  - [Infrastructure Overview](#infrastructure-overview)
+  - [Application Flow](#application-flow)
+- [Demos](#demos)
+  - [Fault Tolerance](#fault-tolerance)
+  - [Autoscaling](#autoscaling)
+  - [CI/CD and GitOps](#cicd-and-gitops)
+  - [Secret Management](#secret-management)
+  - [Observability](#observability)
+- [Interesting Highlights](#interesting-highlights)
+- [Future Improvements](#future-improvements)
+
 ## Introduction
 
 FileOps is a sample file-processing platform built to demonstrate modern platform engineering practices on AWS and Kubernetes. Rather than focusing on application features, the project emphasises infrastructure automation, scalability, and operational reliability.
@@ -107,7 +124,7 @@ This video demonstrates event-driven autoscaling using Prometheus, KEDA and Karp
 
 ▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/autoscaling.mp4)
 
-### CI/CD + GitOps
+### CI/CD and GitOps
 
 This video demonstrates separate pipelines for app delivery, infra provisioning and GitOps deployments.
 
