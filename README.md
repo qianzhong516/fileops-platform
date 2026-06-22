@@ -146,6 +146,7 @@ This video demonstrates visualising Prometheus metrics through Grafana dashboard
 
 - Use Docker cache mounts with GitHub Actions Cache to save dependency and app compilation caches. Reduced average image build time from ~4 minutes to ~2 minutes.
 - Detect leaked secrets before code reaches the repository via Pre-commit hooks.
+- Terraform documentation is automatically generated via Pre-commit hooks.
 - Cluster access is managed through EKS access entries. Workload permissions are granted using Pod Identity Associations where supported, with IRSA used for components that do not yet support Pod Identity.
 
 ## Future Improvements
