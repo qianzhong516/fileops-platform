@@ -19,7 +19,7 @@
 
 ## Introduction
 
-FileOps is a sample file-processing platform built to demonstrate modern platform engineering practices on AWS and Kubernetes. Rather than focusing on application features, the project emphasises infrastructure automation, scalability, and operational reliability.
+FileOps is a sample file-processing platform built to showcase modern DevOps practices on AWS and Kubernetes. Rather than focusing on application features, the project emphasises infrastructure automation, scalability, and operational reliability.
 
 Key areas covered include:
 
