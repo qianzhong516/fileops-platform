@@ -3,17 +3,17 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Repository Structure](#repository-structure)
-- [Technologies](#technologies)
-- [Architecture](#architecture)
-  - [Infrastructure Overview](#infrastructure-overview)
-  - [Application Flow](#application-flow)
 - [Demos](#demos)
   - [Fault Tolerance](#fault-tolerance)
   - [Autoscaling](#autoscaling)
   - [CI/CD and GitOps](#cicd-and-gitops)
   - [Secret Management](#secret-management)
   - [Observability](#observability)
+- [Repository Structure](#repository-structure)
+- [Technologies](#technologies)
+- [Architecture](#architecture)
+  - [Infrastructure Overview](#infrastructure-overview)
+  - [Application Flow](#application-flow)
 - [Interesting Highlights](#interesting-highlights)
 - [Future Improvements](#future-improvements)
 
@@ -30,6 +30,38 @@ Key areas covered include:
 - Secure secret management and least-privilege access
 
 To generate realistic workloads, file processing is simulated using randomised job durations. In a real-world scenario, these jobs could represent operations such as file compression, image resizing or media transcoding. Multiple workers processing files in parallel to mimic production workloads.
+
+## Demos
+
+### Fault Tolerance
+
+This video demonstrates that workloads can survive pod restarts without losing progress, because jobs are persisted in a database and locks are time-based.
+
+▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/fault-tolerance.mp4)
+
+### Autoscaling
+
+This video demonstrates event-driven autoscaling using Prometheus, KEDA and Karpenter.
+
+▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/autoscaling.mp4)
+
+### CI/CD and GitOps
+
+This video demonstrates separate pipelines for app delivery, infra provisioning and GitOps deployments.
+
+▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/cicd.mp4)
+
+### Secret Management
+
+This video demonstrates secret management using SOPS.
+
+▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/secret-management.mp4)
+
+### Observability
+
+This video demonstrates visualising Prometheus metrics through Grafana dashboards.
+
+▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/o11y.mp4)
 
 ## Repository Structure
 
@@ -109,38 +141,6 @@ Workload and infrastructure are scaled independently to ensure resources grow ac
 Application and cluster metrics are centralised in Prometheus, visualised through Grafana dashboards, providing engineer visibility into system health and performance. This observability platform enables proactive monitoring, troubleshooting and alerting as the platform evolves.
 
 <img src="https://d2h0bw0fewoyk7.cloudfront.net/diagrams/o11y.png" width="full" alt="">
-
-## Demos
-
-### Fault Tolerance
-
-This video demonstrates that workloads can survive pod restarts without losing progress, because jobs are persisted in a database and locks are time-based.
-
-▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/fault-tolerance.mp4)
-
-### Autoscaling
-
-This video demonstrates event-driven autoscaling using Prometheus, KEDA and Karpenter.
-
-▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/autoscaling.mp4)
-
-### CI/CD and GitOps
-
-This video demonstrates separate pipelines for app delivery, infra provisioning and GitOps deployments.
-
-▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/cicd.mp4)
-
-### Secret Management
-
-This video demonstrates secret management using SOPS.
-
-▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/secret-management.mp4)
-
-### Observability
-
-This video demonstrates visualising Prometheus metrics through Grafana dashboards.
-
-▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/o11y.mp4)
 
 ## Interesting Highlights
 
