@@ -1,14 +1,14 @@
 # FileOps
 
+## Project Preview
+
+For a visual overview of FileOps, visit:
+https://fileops-website.vercel.app
+
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Demos](#demos)
-  - [Fault Tolerance](#fault-tolerance)
-  - [Autoscaling](#autoscaling)
-  - [CI/CD and GitOps](#cicd-and-gitops)
-  - [Secret Management](#secret-management)
-  - [Observability](#observability)
 - [Repository Structure](#repository-structure)
 - [Technologies](#technologies)
 - [Architecture](#architecture)
@@ -19,7 +19,7 @@
 
 ## Introduction
 
-FileOps is a sample file-processing platform built to showcase modern DevOps practices on AWS and Kubernetes. Rather than focusing on application features, the project emphasises infrastructure automation, scalability, and operational reliability.
+FileOps is a file-processing platform built to showcase modern DevOps practices on AWS and Kubernetes. Rather than focusing on application features, the project emphasises infrastructure automation, scalability, and operational reliability.
 
 Key areas covered include:
 
@@ -33,35 +33,7 @@ To generate realistic workloads, file processing is simulated using randomised j
 
 ## Demos
 
-### Fault Tolerance
-
-This video demonstrates that workloads can survive pod restarts without losing progress, because jobs are persisted in a database and locks are time-based.
-
-▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/fault-tolerance.mp4)
-
-### Autoscaling
-
-This video demonstrates event-driven autoscaling using Prometheus, KEDA and Karpenter.
-
-▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/autoscaling.mp4)
-
-### CI/CD and GitOps
-
-This video demonstrates separate pipelines for app delivery, infra provisioning and GitOps deployments.
-
-▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/cicd.mp4)
-
-### Secret Management
-
-This video demonstrates secret management using SOPS.
-
-▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/secret-management.mp4)
-
-### Observability
-
-This video demonstrates visualising Prometheus metrics through Grafana dashboards.
-
-▶ [Watch Video](https://d2h0bw0fewoyk7.cloudfront.net/videos/o11y.mp4)
+Watch demos at https://fileops-website.vercel.app/#demos.
 
 ## Repository Structure
 
@@ -98,7 +70,7 @@ This video demonstrates visualising Prometheus metrics through Grafana dashboard
 
 The platform follows a private-by-default architecture. Customer traffic and administrative traffic are isolated through separate load balancers, while workloads and databases remain inaccessible from the public Internet.
 
-<img src="https://d2h0bw0fewoyk7.cloudfront.net/diagrams/architecture.png" width="full" alt="">
+<img src="https://d2h0bw0fewoyk7.cloudfront.net/diagrams/fileops_aws_architecture.drawio.svg" width="full" alt="">
 
 ### Application Flow
 
